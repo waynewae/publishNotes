@@ -36,16 +36,16 @@
 </ul>
 
 <h1 id="time-synchronization">Time synchronization</h1>
-<p>For real-time communication with hard, non-negotiable time boundaries for end-to-end transmission lantacies, all devices need to have a common time reference and therefore, need to synchronize their clocks among each other.</p>
+<p>For real-time communication with hard, non-negotiable time boundaries for end-to-end transmission latencies, all devices need to have a common time reference and therefore, need to synchronize their clocks among each other.</p>
 
 <ul>
   <li>Time in TSN networks is usually distributed from one central time source directly through the network itself using IEEE 1588 Precision Time Protocol, which utilizes Ethernet frame to distribute synchronization information.</li>
   <li>IEEE 802.1AS is tightly constrained subset of IEEE 1588 with sub-microsecond precision</li>
-  <li>IEEE 802.1AS-2011 defines the <code class="highlighter-rouge">Generic Precision Time Protocol(gPTP)</code> profile which employs UDP messages to establish a hierarchy of clocks and synchronize time in a gPTP doamin formed by devices exchanging time events</li>
+  <li>IEEE 802.1AS-2011 defines the <code class="highlighter-rouge">Generic Precision Time Protocol(gPTP)</code> profile which employs UDP messages to establish a hierarchy of clocks and synchronize time in a gPTP domain formed by devices exchanging time events</li>
   <li>the gPTP measures
     <ul>
-      <li>the frame residence time within each bridge(processing, queuing and trasnmission from ingress to egress ports)</li>
-      <li>link latency of each hop(a propagation delay between 2 adjecent brigies)</li>
+      <li>the frame residence time within each bridge(processing, queuing and transmission from ingress to egress ports)</li>
+      <li>link latency of each hop(a propagation delay between 2 adjacent bridges)</li>
     </ul>
   </li>
   <li>Synchronization time accuracy depends on precise measurements of link delay and frame residence time
