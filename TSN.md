@@ -1,0 +1,35 @@
+# Time-Sensitive Network(TSN)
+## Introduction
+* A standard series extern from 802.1Q
+* in particular address the transmission of **very low transmission latency** and **high availability**
+
+To achieve the subject of TSN, there are three basic components need to satisfy in concerted way:
+* Time synchronization
+  * All devices are participating in a real-time communication need to have a common understanding of time.
+* Scheduling & traffic shaping
+  * All devices adhere to the same rules to processing & forwarding packets
+* Selections of communication paths, path reservation & fault-tolerance
+  * All devices adhere to the same rules `in selection communication paths` & `in reserving bandwidth & time slot`, possibly utilizing more than one simultaneous communication paths to achieve fault-tolerance
+
+## The following standards sometimes are referred as AVB standards
+* IEEE Std 802.1AS-2011
+* IEEE Std 802.1Qat-2010
+  * Part of IEEE Std 802.1Q-2018
+* IEEE Std 802.1Qav-2009
+* IEEE Std 802.1BA-2011
+
+## Time synchronization
+For real-time communication with hard, non-negotiable time boundaries for end-to-end transmission lantacies, all devices need to have a common time reference and therefore, need to synchronize their clocks among each other.
+
+* Time in TSN networks is usually distributed from one central time source directly through the network itself using IEEE 1588 Precision Time Protocol, which utilizes Ethernet frame to distribute synchronization information.
+* IEEE 802.1AS is tightly constrained subset of IEEE 1588 with sub-microsecond precision
+* IEEE 802.1AS-2011 defines the `Generic Precision Time Protocol(gPTP)` profile which employs UDP messages to establish a hierarchy of clocks and synchronize time in a gPTP doamin formed by devices exchanging time events
+* the gPTP measures
+  * the frame residence time within each bridge(processing, queuing and trasnmission from ingress to egress ports)
+  * link latency of each hop(a propagation delay between 2 adjecent brigies)
+* Synchronization time accuracy depends on precise measurements of link delay and frame residence time
+![](pics/2020-04-21-16-50-19.png)
+
+## References
+* https://en.wikipedia.org/wiki/Time-Sensitive_Networking
+* https://1.ieee802.org/tsn/#Published_TSN_Standards
