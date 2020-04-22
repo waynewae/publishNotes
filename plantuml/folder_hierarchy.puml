@@ -1,0 +1,13 @@
+@startmindmap
+* Root
+** index.html
+** _config.yml
+** _posts
+** _drafts
+** _data
+** _includes
+** _layouts
+** _sass
+** _site
+** .jekyll-metadata
+@endmindmap

@@ -26,7 +26,7 @@ gem "jekyll"
 
 ## Jekyll on Github Page
 ### Displaying an index of postsPermalink is not working on Github Page
-According to [Displaying an index of posts](https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts),the following statements should be work
+According to [Displaying an index of posts](https://jekyllrb.com/docs/posts/#displaying-an-index-of-posts), the following statements should be work
 ```
 <ul>
   {% for post in site.posts %}
@@ -50,3 +50,15 @@ baseurl:/{$yourRepoName}
   ```
   ![]({{ site.baseurl }}/assets/2020-04-21-16-50-19.png)
   ```
+
+## Directory Structure
+![]({{ site.baseurl }}/assets/folder_hierarchy.svg)
+
+### _config.yml
+Stores configuration data
+
+### _posts
+Your dynamic content, so to speak. The naming convention of these files is important, and must follow the format: `{$YEAR}-{$MONTH}-{$DAY}-title.md`
+
+### _drafts
+Unpublished posts. The format of these files is without a date.
