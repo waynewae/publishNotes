@@ -1,19 +1,11 @@
 ---
-layout: default
 title: Blog
 ---
 
 <!DOCTYPE HTML>
 <html>
-<body>
-
-<ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-</ul>
-
-</body>
+<frameset cols="25%,75%">
+<frame name="left" src=navigation.html>
+<frame name="right" src="README.md" marginwidth="30">
+</frameset>
 </html>
