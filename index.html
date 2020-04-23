@@ -3,15 +3,6 @@
 <title>快樂電影城</title>
 </head>
 <frameset cols="25%,75%">
-a<frame name="left">
-  <h1>Latest Posts</h1>
-<ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-</ul>
-</frame>>
-b<frame name="right" markdown="1" src="README.md" marginwidth="30">
+<frame name="left" src=navigation.html>
+<frame name="right" markdown="1" src="README.md" marginwidth="30">
 </frameset>
