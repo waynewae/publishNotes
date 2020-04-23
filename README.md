@@ -1,3 +1,6 @@
+---
+title: readme
+---
 ## Welcome to GitHub Pages
 Link: https://waynewae.github.io/publishNotes/
 
