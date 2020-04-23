@@ -2,11 +2,11 @@
 title: Navigation
 ---
 
-<h1>Latest Posts</h1>
+<head>Argo's Space</head>
 <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}" target=right>{{ post.title }}</a>
+      <li style='list-style-type:none;'>
+        <a href="{{ site.baseurl }}{{ post.url }}" target="content">{{ post.title }}</a>
       </li>
     {% endfor %}
 </ul>
