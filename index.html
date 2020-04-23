@@ -1,12 +1,16 @@
----
-layout: default
-title: Blog
----
+<!DOCTYPE HTML>
+<html>
+<body>
 
-<head>
-<title>快樂電影城</title>
-</head>
-<frameset cols="25%,75%">
-<frame name="left" src=navigation.html>
-<frame name="right" markdown="1" src="README.md" marginwidth="30">
-</frameset>
+<nav>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
+</nav>
+
+</body>
+</html>
