@@ -1,12 +1,6 @@
----
-title: Navigation
----
-
-<head>Argo's Space</head>
-<ul>
+<nav>
+    <a href="/">Home</a>
     {% for post in site.posts %}
-      <li style='list-style-type:none;'>
         <a href="{{ site.baseurl }}{{ post.url }}" target="content">{{ post.title }}</a>
-      </li>
     {% endfor %}
-</ul>
+</nav>
