@@ -1,5 +1,5 @@
 <nav>
-    <a href="/">Home</a>
+    <a href="{{ site.baseurl }}">Home</a>
     {% for post in site.posts %}
         <a href="{{ site.baseurl }}{{ post.url }}" target="content">{{ post.title }}</a>
     {% endfor %}
