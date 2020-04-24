@@ -2,3 +2,4 @@
 title: Argo's Space
 description: Here are my learning notes
 baseurl: /publishNotes
+markdown: kramdown
