@@ -1,11 +1,11 @@
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
     float: left;
-    width: 70%;
+    width: 66%;
     height: 100%;
     overflow-x: scroll;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
