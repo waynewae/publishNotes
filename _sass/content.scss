@@ -1,6 +1,6 @@
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    overflow:scroll;
+    overflow-x:scroll;
     margin-left: 200px;
     margin-right: 160px; /* Same as the width of the toc */
     padding: 1px 16px;
