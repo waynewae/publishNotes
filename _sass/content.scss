@@ -3,6 +3,7 @@ div.content {
     float: left;
     width: 70%;
     height: 100%;
+    overflow-x: scroll;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
