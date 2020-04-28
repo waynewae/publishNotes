@@ -1,5 +1,5 @@
 /* The sidebar menu */
-.toc {
+.inline_toc {
   float: left;
   padding: 0;
   height: 100%;
@@ -9,7 +9,7 @@
 }
   
   /* The navigation menu links */
-  .toc a {
+  .inline_toc a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 15px;
@@ -18,12 +18,12 @@
   }
   
   /* When you mouse over the navigation links, change their color */
-  .toc a:hover {
+  .inline_toc a:hover {
     color: #f1f1f1;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .toc {padding-top: 15px;}
-    .toc a {font-size: 18px;}
+    .inline_toc {padding-top: 15px;}
+    .inline_toc a {font-size: 18px;}
   }
