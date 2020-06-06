@@ -3,6 +3,6 @@ title: Argo's Space
 description: Here are my learning notes
 baseurl: /publishNotes
 markdown: kramdown
-plugins:
+gems:
   - jekyll-remote-theme
 remote_theme: benbalter/retlab
